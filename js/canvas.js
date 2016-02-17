@@ -28,17 +28,13 @@ $(function(){
 
     var obj=new shape(copy[0],canvas[0],cobj);
     $(".hasson:eq(1)").find(".son li").click(function(){
-
         if($(this).attr("data-role")!="pen"){
             obj.shapes=$(this).attr("data-role");
             obj.draw();
-
-
         }else{
             obj.shapes = $(this).attr("data-role");
             obj.pen();
         }
-
     });
     $(".type li").click(function(){
         obj.type=$(this).attr("data-role");

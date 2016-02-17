@@ -68,7 +68,7 @@ shape.prototype={
         }
     },
     five:function(x,y,x1,y1){
-        var r=Math.sqrt((x1-x)*(x1-x1)+(y1-y)*(y1-y));
+        var r=Math.sqrt((x1-x)*(x1-x)+(y1-y)*(y1-y));
         var r1=r/2;
         this.cobj.beginPath();
         this.cobj.moveTo(x+r,y);
@@ -140,7 +140,7 @@ shape.prototype={
                 that.cobj.clearRect(lefts,tops,w,h);
 
             }
-            console.log(2);
+        
             that.canvas.onmouseup=function(e){
                 xpobj.css("display","none");
                 console.log(1);
